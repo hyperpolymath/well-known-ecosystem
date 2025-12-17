@@ -19,7 +19,7 @@
     (synopsis "Guix channel/infrastructure")
     (description "Guix channel/infrastructure - part of the RSR ecosystem.")
     (home-page "https://github.com/hyperpolymath/well-known-ecosystem")
-    (license license:agpl3+)))
+    (license (list license:expat license:agpl3+))))
 
 ;; Return package for guix shell
 well_known_ecosystem

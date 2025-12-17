@@ -6,7 +6,7 @@
   (version "1.0.0")
   (name "well-known-ecosystem")
   (type "project")
-  (purpose "Jonathan D.A. Jewell <jonathan.jewell@gmail.com>")
+  (purpose "Well-known URI ecosystem management with RSR compliance enforcement")
 
   (position-in-ecosystem
     "Part of hyperpolymath ecosystem. Follows RSR guidelines.")
@@ -16,5 +16,5 @@
              (url "https://github.com/hyperpolymath/rhodium-standard-repositories")
              (relationship "standard")))
 
-  (what-this-is "Jonathan D.A. Jewell <jonathan.jewell@gmail.com>")
+  (what-this-is "A Guix channel providing .well-known URI infrastructure and RSR reference implementation")
   (what-this-is-not "- NOT exempt from RSR compliance"))

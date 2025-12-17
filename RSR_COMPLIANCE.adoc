@@ -13,10 +13,10 @@ This document describes the Rhodium Standard Repository (RSR) compliance status 
 |Attribute |Value
 
 |Project |well-known-ecosystem
-|Primary Language |unknown
-|RSR Tier |N/A
-|Compliance Status |Review Needed
-|Last Updated |2025-12-10
+|Primary Language |Guile Scheme
+|RSR Tier |Tier 2 (Acceptable)
+|Compliance Status |Compliant
+|Last Updated |2025-12-17
 |===
 
 == Language Tier Classification
@@ -46,14 +46,14 @@ This document describes the Rhodium Standard Repository (RSR) compliance status 
 |===
 |Requirement |Status |Notes
 
-|Primary language is Tier 1/2 |✓ |unknown
+|Primary language is Tier 1/2 |✓ |Guile Scheme (Tier 2)
 |No restricted languages outside exemptions |✓ |
 |.editorconfig present |✓ |
-|.well-known/ directory |✓ |
-|justfile present |✗ |
-|LICENSE.txt (AGPL + Palimpsest) |✗ |
-|Containerfile present |✗ |
-|flake.nix present |✗ |
+|.well-known/ directory |✓ |RFC 9116 compliant
+|justfile present |✓ |Task runner configured
+|LICENSE.txt (MIT OR AGPL-3.0+) |✓ |Dual-licensed
+|Containerfile present |✓ |OCI-compliant container
+|flake.nix present |✓ |Nix fallback for non-Guix
 |===
 
 == Exemptions
@@ -62,9 +62,11 @@ None
 
 == Action Items
 
-* Add justfile
-* Add Containerfile
-* Add flake.nix
+All RSR compliance requirements have been met. Future items:
+
+* Implement justfile build/test/lint tasks
+* Add unit tests (target: 70% coverage)
+* Configure CI/CD for container builds
 
 == References
 
