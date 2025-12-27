@@ -1,29 +1,65 @@
+# SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+# SPDX-FileCopyrightText: 2024-2025 hyperpolymath
+#
 # well-known-ecosystem - Development Tasks
+
 set shell := ["bash", "-uc"]
 set dotenv-load := true
 
 project := "well-known-ecosystem"
+validator_dir := "validator"
 
 # Show all recipes
 default:
     @just --list --unsorted
 
-# Build
+# Build the validator
 build:
-    @echo "TODO: Add build command"
+    cd {{validator_dir}} && cargo build --release
 
-# Test
+# Run all tests
 test:
-    @echo "TODO: Add test command"
+    cd {{validator_dir}} && cargo test
 
-# Clean
+# Clean build artifacts
 clean:
-    @echo "TODO: Add clean command"
+    cd {{validator_dir}} && cargo clean
 
-# Format
+# Format code
 fmt:
-    @echo "TODO: Add format command"
+    cd {{validator_dir}} && cargo fmt
 
-# Lint
+# Check formatting
+fmt-check:
+    cd {{validator_dir}} && cargo fmt --check
+
+# Run clippy lints
 lint:
-    @echo "TODO: Add lint command"
+    cd {{validator_dir}} && cargo clippy -- -D warnings
+
+# Validate example well-known files
+validate-examples:
+    cd {{validator_dir}} && cargo run --release -- validate-dir ../examples/.well-known
+
+# Validate a specific file
+validate file:
+    cd {{validator_dir}} && cargo run --release -- validate {{file}}
+
+# List supported resource types
+list-resources:
+    cd {{validator_dir}} && cargo run --release -- list --detailed
+
+# Show rules for a resource type
+show-rules resource_type:
+    cd {{validator_dir}} && cargo run --release -- rules {{resource_type}}
+
+# Run all checks (fmt, lint, test)
+check: fmt-check lint test
+
+# Install the validator locally
+install:
+    cd {{validator_dir}} && cargo install --path .
+
+# Generate Cargo.lock
+lock:
+    cd {{validator_dir}} && cargo generate-lockfile
