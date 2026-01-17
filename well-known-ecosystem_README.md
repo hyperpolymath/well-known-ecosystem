@@ -1,6 +1,6 @@
 # Well-Known Ecosystem
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Palimpsest-MPL License v1.0 (PMPL-1.0)](https://img.shields.io/badge/License-PMPL-1.0-green.svg)](https://choosealicense.com/licenses/mit/)
 [![GitHub Stars](https://img.shields.io/github/stars/hyperpolymath/well-known-ecosystem.svg)](https://github.com/hyperpolymath/well-known-ecosystem/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/hyperpolymath/well-known-ecosystem.svg)](https://github.com/hyperpolymath/well-known-ecosystem/issues)
 [![GitHub Forks](https://img.shields.io/github/forks/hyperpolymath/well-known-ecosystem.svg)](https://github.com/hyperpolymath/well-known-ecosystem/network)
@@ -286,7 +286,7 @@ Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTIN
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Palimpsest-MPL License v1.0 (PMPL-1.0) - see the [LICENSE](LICENSE) file for details.
 
 ## Author
 

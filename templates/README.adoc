@@ -1,7 +1,10 @@
-// SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+// SPDX-License-Identifier: PMPL-1.0 OR PMPL-1.0-or-later
 // SPDX-FileCopyrightText: 2024-2025 hyperpolymath
 
 = Well-Known Ecosystem Templates
+image:https://img.shields.io/badge/license-PMPL--1.0-blue.svg[License,link="https://github.com/hyperpolymath/palimpsest-license"]
+
+
 :author: hyperpolymath
 :toc: macro
 :toclevels: 3
@@ -324,4 +327,4 @@ Required for:
 
 == License
 
-MIT OR AGPL-3.0-or-later
+PMPL-1.0 OR PMPL-1.0-or-later

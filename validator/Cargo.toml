@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+# SPDX-License-Identifier: PMPL-1.0 OR PMPL-1.0-or-later
 # SPDX-FileCopyrightText: 2024-2025 hyperpolymath
 
 [package]
@@ -7,7 +7,7 @@ version = "0.1.0"
 edition = "2021"
 authors = ["hyperpolymath"]
 description = "Well-Known Ecosystem validator CLI"
-license = "MIT OR AGPL-3.0-or-later"
+license = "PMPL-1.0"
 repository = "https://github.com/hyperpolymath/well-known-ecosystem"
 keywords = ["well-known", "rfc8615", "rfc9116", "security-txt", "validator"]
 categories = ["command-line-utilities", "web-programming"]

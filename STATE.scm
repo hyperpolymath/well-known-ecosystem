@@ -1,5 +1,5 @@
 ;; STATE.scm - RSR State File
-;; SPDX-License-Identifier: AGPL-3.0-or-later
+;; SPDX-License-Identifier: PMPL-1.0
 ;; Copyright (C) 2025 Jonathan D.A. Jewell
 ;;
 ;; This file tracks the current state of the project using S-expressions.
@@ -13,7 +13,7 @@
   (project
     (name . "well-known-ecosystem")
     (tier . "infrastructure")
-    (license . "AGPL-3.0-or-later")
+    (license . "PMPL-1.0-or-later")
     (language . "ada"))
 
   (compliance
